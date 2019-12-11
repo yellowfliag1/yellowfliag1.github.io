@@ -6,16 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>日更？ | Hexo</title>
+  <title>Python 的文件操作open | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="日更？日更是不可能日更的，只能瞎写一些东西这样子来维持一些生活这样子。over.">
+  <meta name="description" content="Python 的文件操作&#x2F;open1with open(路径，读写模式) as file:  读写类型有很多种：    读写模式 基本描述    t 文本模式（默认)   x 写模式，新建一个文件。若该文件存在则报错   b 二进制模式   + 打开一个文件进行更新）(可读可写入)   U 通用换行模式（不推荐使用）   r (read)打开一个文件只读模式   rb 以二进制格式打开一个文件用于">
 <meta property="og:type" content="article">
-<meta property="og:title" content="日更？">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;25&#x2F;%E6%97%A5%E6%9B%B4%EF%BC%9F&#x2F;index.html">
+<meta property="og:title" content="Python 的文件操作open">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;06&#x2F;Python%20%E7%9A%84%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9Copen&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="日更？日更是不可能日更的，只能瞎写一些东西这样子来维持一些生活这样子。over.">
+<meta property="og:description" content="Python 的文件操作&#x2F;open1with open(路径，读写模式) as file:  读写类型有很多种：    读写模式 基本描述    t 文本模式（默认)   x 写模式，新建一个文件。若该文件存在则报错   b 二进制模式   + 打开一个文件进行更新）(可读可写入)   U 通用换行模式（不推荐使用）   r (read)打开一个文件只读模式   rb 以二进制格式打开一个文件用于">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-25T14:03:46.312Z">
+<meta property="og:updated_time" content="2019-12-07T06:06:44.556Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -152,27 +152,101 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-日更？" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Python 的文件操作open" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      日更？
+      Python 的文件操作open
     </h1>
   
 
         
-        <a href="/2019/11/25/%E6%97%A5%E6%9B%B4%EF%BC%9F/" class="archive-article-date">
-  	<time datetime="2019-11-25T14:03:46.312Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-25</time>
+        <a href="/2019/12/06/Python%20%E7%9A%84%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9Copen/" class="archive-article-date">
+  	<time datetime="2019-12-06T09:11:06.411Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-06</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>日更？日更是不可能日更的，只能瞎写一些东西这样子来维持一些生活这样子。over.</p>
+        <h1 id="Python-的文件操作-open"><a href="#Python-的文件操作-open" class="headerlink" title="Python 的文件操作/open"></a>Python 的文件操作/open</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(路径，读写模式) <span class="keyword">as</span> file:</span><br></pre></td></tr></table></figure>
+
+<p>读写类型有很多种：</p>
+<table>
+<thead>
+<tr>
+<th align="left">读写模式</th>
+<th>基本描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">t</td>
+<td>文本模式（默认)</td>
+</tr>
+<tr>
+<td align="left">x</td>
+<td>写模式，新建一个文件。若该文件存在则报错</td>
+</tr>
+<tr>
+<td align="left">b</td>
+<td>二进制模式</td>
+</tr>
+<tr>
+<td align="left">+</td>
+<td>打开一个文件进行更新）(可读可写入)</td>
+</tr>
+<tr>
+<td align="left">U</td>
+<td>通用换行模式（不推荐使用）</td>
+</tr>
+<tr>
+<td align="left">r</td>
+<td>(read)打开一个文件只读模式</td>
+</tr>
+<tr>
+<td align="left">rb</td>
+<td>以二进制格式打开一个文件用于只读</td>
+</tr>
+<tr>
+<td align="left">r+</td>
+<td>打开一个文件用于读写</td>
+</tr>
+<tr>
+<td align="left">rb+</td>
+<td>以二进制格式打开一个文件用于读写</td>
+</tr>
+<tr>
+<td align="left">w</td>
+<td>(write)打开一个文件只用于写入模式</td>
+</tr>
+<tr>
+<td align="left">wb</td>
+<td>以二进制的格式打开一个文件只用于写入</td>
+</tr>
+<tr>
+<td align="left">a</td>
+<td>(append)打开一个文件用于追加。若文件存在则在文件末尾追加，若文件不存在则创建新的文件并写入。</td>
+</tr>
+<tr>
+<td align="left">ab</td>
+<td>以二进制的格式打开一个文件用于追加</td>
+</tr>
+<tr>
+<td align="left">a+</td>
+<td>打开一个文件用于读写</td>
+</tr>
+<tr>
+<td align="left">ab+</td>
+<td>以二进制的格式打开一个文件用于追加</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td></td>
+</tr>
+</tbody></table>
 
       
 
@@ -252,7 +326,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/25/%E6%97%A5%E6%9B%B4%EF%BC%9F/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/06/Python%20%E7%9A%84%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9Copen/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -266,18 +340,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/11/30/%E6%80%9D%E8%AE%AE%E9%B8%BD/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/12/07/Python%20%E7%9A%84split()%E6%96%B9%E6%B3%95/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          思议鸽
+          Python 的split()方法
         
       </div>
     </a>
   
   
-    <a href="/2019/11/24/Python%20%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Python 的学习笔记</div>
+    <a href="/2019/11/30/%E6%80%9D%E8%AE%AE%E9%B8%BD/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">思议鸽</div>
       <i class="icon-circle-right"></i>
     </a>
   

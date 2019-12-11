@@ -6,16 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>日更？ | Hexo</title>
+  <title>BeautifulSoup的安装和使用 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="日更？日更是不可能日更的，只能瞎写一些东西这样子来维持一些生活这样子。over.">
+  <meta name="description" content="BeautifulSoup的安装和使用简单介绍Beautiful Soup是Pyhton的一个包，功能包括解析解析HTML、XML文档、修复含有未闭合标签等错误的文档（此种文档常被称为tag soup）。这个扩展包为待解析的页面创建一棵树，以便提取其中的数据，这在网络数据采集时非常有用  BeautifulSoup的安装首先安装BeautifulSoup，用管理员权限打开cmd，然后输入pip i">
 <meta property="og:type" content="article">
-<meta property="og:title" content="日更？">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;25&#x2F;%E6%97%A5%E6%9B%B4%EF%BC%9F&#x2F;index.html">
+<meta property="og:title" content="BeautifulSoup的安装和使用">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;07&#x2F;BeautifulSoup%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="日更？日更是不可能日更的，只能瞎写一些东西这样子来维持一些生活这样子。over.">
+<meta property="og:description" content="BeautifulSoup的安装和使用简单介绍Beautiful Soup是Pyhton的一个包，功能包括解析解析HTML、XML文档、修复含有未闭合标签等错误的文档（此种文档常被称为tag soup）。这个扩展包为待解析的页面创建一棵树，以便提取其中的数据，这在网络数据采集时非常有用  BeautifulSoup的安装首先安装BeautifulSoup，用管理员权限打开cmd，然后输入pip i">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-25T14:03:46.312Z">
+<meta property="og:updated_time" content="2019-12-07T13:35:40.806Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -152,27 +152,31 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-日更？" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-BeautifulSoup的安装和使用" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      日更？
+      BeautifulSoup的安装和使用
     </h1>
   
 
         
-        <a href="/2019/11/25/%E6%97%A5%E6%9B%B4%EF%BC%9F/" class="archive-article-date">
-  	<time datetime="2019-11-25T14:03:46.312Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-25</time>
+        <a href="/2019/12/07/BeautifulSoup%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/" class="archive-article-date">
+  	<time datetime="2019-12-07T13:04:54.358Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-07</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>日更？日更是不可能日更的，只能瞎写一些东西这样子来维持一些生活这样子。over.</p>
+        <h1 id="BeautifulSoup的安装和使用"><a href="#BeautifulSoup的安装和使用" class="headerlink" title="BeautifulSoup的安装和使用"></a>BeautifulSoup的安装和使用</h1><h6 id="简单介绍"><a href="#简单介绍" class="headerlink" title="简单介绍"></a>简单介绍</h6><p>Beautiful Soup是Pyhton的一个包，功能包括解析解析HTML、XML文档、修复含有未闭合标签等错误的文档（此种文档常被称为tag soup）。这个扩展包为待解析的页面创建一棵树，以便提取其中的数据，这在网络数据采集时非常有用 </p>
+<h6 id="BeautifulSoup的安装"><a href="#BeautifulSoup的安装" class="headerlink" title="BeautifulSoup的安装"></a>BeautifulSoup的安装</h6><p>首先安装BeautifulSoup，用管理员权限打开cmd，然后输入pip install beautifulsoup4即可。</p>
+<h6 id="BeautifulSoup的使用"><a href="#BeautifulSoup的使用" class="headerlink" title="BeautifulSoup的使用"></a>BeautifulSoup的使用</h6><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup <span class="comment">#在这里我们从bs4这个库里导入了BeautifulSoup这个类</span></span><br><span class="line">soup = BeautifulSoup(<span class="string">'&lt;p&gt;data&lt;/p&gt;'</span>, <span class="string">'html.parser'</span>)</span><br></pre></td></tr></table></figure>
+
+<p>即可简单使用，当然里面的参数<p>data</p>我们可以用<code>requests.get(url)</code>来获取相关网页的html文本 。关于更多的BeautifulSoup的相关知识可以前往：</p>
 
       
 
@@ -252,7 +256,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/25/%E6%97%A5%E6%9B%B4%EF%BC%9F/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/07/BeautifulSoup%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -266,18 +270,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/11/30/%E6%80%9D%E8%AE%AE%E9%B8%BD/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          思议鸽
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/11/24/Python%20%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Python 的学习笔记</div>
+    <a href="/2019/12/07/%E5%9C%A8%E7%88%AC%E5%8F%96%E4%BA%9A%E9%A9%AC%E9%80%8A%E5%95%86%E5%93%81%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">在爬取亚马逊商品时出现的问题</div>
       <i class="icon-circle-right"></i>
     </a>
   

@@ -6,16 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>日更？ | Hexo</title>
+  <title>Python 的split()方法 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="日更？日更是不可能日更的，只能瞎写一些东西这样子来维持一些生活这样子。over.">
+  <meta name="description" content="Python 的split()方法定义和用法split()方法会把一个字符串分割成一个列表，可以指定分隔符，默认的分隔符是任何空格 句法string.split(separator, maxsplit)注意指定maxsplit时列表将包含指定数量的元素加1 例子使用逗号分割字符串，后跟一个空格作为分割符不然分割出来的每一部分开头是空格： 12345txt = &quot;Hello, my name is">
 <meta property="og:type" content="article">
-<meta property="og:title" content="日更？">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;25&#x2F;%E6%97%A5%E6%9B%B4%EF%BC%9F&#x2F;index.html">
+<meta property="og:title" content="Python 的split()方法">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;07&#x2F;Python%20%E7%9A%84split()%E6%96%B9%E6%B3%95&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="日更？日更是不可能日更的，只能瞎写一些东西这样子来维持一些生活这样子。over.">
+<meta property="og:description" content="Python 的split()方法定义和用法split()方法会把一个字符串分割成一个列表，可以指定分隔符，默认的分隔符是任何空格 句法string.split(separator, maxsplit)注意指定maxsplit时列表将包含指定数量的元素加1 例子使用逗号分割字符串，后跟一个空格作为分割符不然分割出来的每一部分开头是空格： 12345txt = &quot;Hello, my name is">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-25T14:03:46.312Z">
+<meta property="og:updated_time" content="2019-12-07T06:39:12.245Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -152,27 +152,32 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-日更？" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Python 的split()方法" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      日更？
+      Python 的split()方法
     </h1>
   
 
         
-        <a href="/2019/11/25/%E6%97%A5%E6%9B%B4%EF%BC%9F/" class="archive-article-date">
-  	<time datetime="2019-11-25T14:03:46.312Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-25</time>
+        <a href="/2019/12/07/Python%20%E7%9A%84split()%E6%96%B9%E6%B3%95/" class="archive-article-date">
+  	<time datetime="2019-12-07T06:18:25.765Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-07</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>日更？日更是不可能日更的，只能瞎写一些东西这样子来维持一些生活这样子。over.</p>
+        <h1 id="Python-的split-方法"><a href="#Python-的split-方法" class="headerlink" title="Python 的split()方法"></a>Python 的split()方法</h1><h6 id="定义和用法"><a href="#定义和用法" class="headerlink" title="定义和用法"></a>定义和用法</h6><p>split()方法会把一个字符串分割成一个列表，可以指定分隔符，默认的分隔符是任何空格</p>
+<h6 id="句法"><a href="#句法" class="headerlink" title="句法"></a>句法</h6><p><code>string.split(separator, maxsplit)</code>注意指定maxsplit时列表将包含指定数量的元素加1</p>
+<h6 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h6><p>使用逗号分割字符串，后跟一个空格作为分割符不然分割出来的每一部分开头是空格：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">txt = <span class="string">"Hello, my name is van, nice to meet you!"</span></span><br><span class="line"></span><br><span class="line">x = txt.split(<span class="string">", "</span>)</span><br><span class="line"></span><br><span class="line">print(x)</span><br></pre></td></tr></table></figure>
+
+<p>注意：假如要返回列表的某一个可以在用<code>string.split()[-1]</code>如果是上面的代码会返回<strong>nice to meet you</strong></p>
 
       
 
@@ -252,7 +257,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/25/%E6%97%A5%E6%9B%B4%EF%BC%9F/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/07/Python%20%E7%9A%84split()%E6%96%B9%E6%B3%95/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -266,18 +271,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/11/30/%E6%80%9D%E8%AE%AE%E9%B8%BD/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/12/07/%E5%9C%A8%E7%88%AC%E5%8F%96%E4%BA%9A%E9%A9%AC%E9%80%8A%E5%95%86%E5%93%81%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          思议鸽
+          在爬取亚马逊商品时出现的问题
         
       </div>
     </a>
   
   
-    <a href="/2019/11/24/Python%20%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Python 的学习笔记</div>
+    <a href="/2019/12/06/Python%20%E7%9A%84%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9Copen/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Python 的文件操作open</div>
       <i class="icon-circle-right"></i>
     </a>
   
