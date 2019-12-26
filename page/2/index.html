@@ -151,6 +151,135 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-更换hexo主题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/23/%E6%9B%B4%E6%8D%A2hexo%E4%B8%BB%E9%A2%98/">更换hexo主题</a>
+    </h1>
+  
+
+        
+        <a href="/2019/11/23/%E6%9B%B4%E6%8D%A2hexo%E4%B8%BB%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2019-11-23T08:12:55.292Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>关于如何更换hexo的主题，首先还是来到myblog这个目录下，因为我们所有的操作基本都是在这个目录下操作的，所以如果觉得不满意的话可以直接删除myblog这个文件。主题我们可以上github上面找，这里呢我就给出了一个我觉得比较不错的主题，然后<code>git clone https://github.com/viosey/hexo-theme-material  theme/voisey</code>这时候我们代开myblog这个文件夹里的theme文件夹会多出一个voisey的文件夹，这里面就保存了我们的主题，然后用<code>notepad _config.yml</code>或者直接到文件夹里找到<strong>_config.yml</strong>这个文件然后打开，找到<!--theme:landscape-->这一栏然后把landscape改成voisey保存就可以了，然后去刷新一下就成功了。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/11/23/%E6%9B%B4%E6%8D%A2hexo%E4%B8%BB%E9%A2%98/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-如何搭建一个hexo的静态博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/23/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAhexo%E7%9A%84%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/">如何搭建一个hexo的静态博客</a>
+    </h1>
+  
+
+        
+        <a href="/2019/11/23/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAhexo%E7%9A%84%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
+  	<time datetime="2019-11-23T08:12:55.290Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="如何搭建一个hexo的静态博客"><a href="#如何搭建一个hexo的静态博客" class="headerlink" title="如何搭建一个hexo的静态博客"></a>如何搭建一个hexo的静态博客</h1><p>首先要下载git(windows的官方下载地址： <a href="https://gitforwindows.org/" target="_blank" rel="noopener">https://gitforwindows.org/</a> ）和NodeJs( <a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a> 选择Recommend for Most Users)，接下来就打开cmd，准备安装hexo，因为直接使用npm会比较慢，所以我们用淘宝的镜像来替换。</p>
+<p>输入命令：<code>npm config set registry &quot;https://registry.npm.taobao.org&quot;</code>就可以，然后输入：<code>npm config get registry</code>就可以看到你的npm的源，这时我们就可以用cnpm来作为命令了。然后我们再用命令： <code>cnpm install hexo-cli g</code> 来安装hexo，安装完成后我们可以用<code>hexo -v</code>来检验一下安装是否完成。下载我们就开始搭建博客，先cd到一个盘里，然后mkdir一个比如说叫blog的文件（<code>mkdir blog</code>)然后cd到blog目录下，或者说直接在电脑里创建一个文件夹叫blog然后在这个文件夹里打开cmd。然后输入<code>hexo init</code>来初始化一个博客，初始化完成后我们再用<code>hexo s</code>来启动我们的博客这时候会出现<img src="C:%5CUsers%5C%E9%BB%84%E4%BD%99%E7%90%AA%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20191123153214706.png" alt="image-20191123153214706"></p>
+<p>然后我们打开浏览器，输入<a href="">localhost:4000</a>就会出现我们的博客<img src="C:%5CUsers%5C%E9%BB%84%E4%BD%99%E7%90%AA%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20191123153428914.png" alt="image-20191123153428914"></p>
+<p>这样我们的博客就算搭建成功了。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/11/23/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAhexo%E7%9A%84%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-所遇问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
