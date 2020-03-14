@@ -6,14 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>my first blog | Hexo</title>
+  <title>亚马逊爬取实例 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="my first blog">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;23&#x2F;my-first-blog&#x2F;index.html">
+  <meta name="description" content="亚马逊爬取实例1234567891011121314import requestsurl = &quot;https:&#x2F;&#x2F;www.amazon.cn&#x2F;dp&#x2F;B07MQX64HQ&#x2F;ref=sr_1_10?__mk_zh_CN=%E4%BA%9A%E9%A9&quot; \      &quot;%AC%E9%80%8A%E7%BD%91%E7%AB%99&amp;amp;keywords=%E4%B9%A6&amp;amp;qid=158416">
+<meta property="og:type" content="article">
+<meta property="og:title" content="亚马逊爬取实例">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;03&#x2F;14&#x2F;%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%88%AC%E5%8F%96%E5%AE%9E%E4%BE%8B&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="亚马逊爬取实例1234567891011121314import requestsurl = &quot;https:&#x2F;&#x2F;www.amazon.cn&#x2F;dp&#x2F;B07MQX64HQ&#x2F;ref=sr_1_10?__mk_zh_CN=%E4%BA%9A%E9%A9&quot; \      &quot;%AC%E9%80%8A%E7%BD%91%E7%AB%99&amp;amp;keywords=%E4%B9%A6&amp;amp;qid=158416">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-22T16:59:29.261Z">
+<meta property="og:updated_time" content="2020-03-14T07:07:13.497Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -150,27 +152,29 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-my-first-blog" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-亚马逊爬取实例" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      my first blog
+      亚马逊爬取实例
     </h1>
   
 
         
-        <a href="/2019/11/23/my-first-blog/" class="archive-article-date">
-  	<time datetime="2019-11-22T16:59:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-23</time>
+        <a href="/2020/03/14/%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%88%AC%E5%8F%96%E5%AE%9E%E4%BE%8B/" class="archive-article-date">
+  	<time datetime="2020-03-14T07:07:13.497Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-14</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h3 id="亚马逊爬取实例"><a href="#亚马逊爬取实例" class="headerlink" title="亚马逊爬取实例"></a>亚马逊爬取实例</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">url = <span class="string">"https://www.amazon.cn/dp/B07MQX64HQ/ref=sr_1_10?__mk_zh_CN=%E4%BA%9A%E9%A9"</span> \</span><br><span class="line">      <span class="string">"%AC%E9%80%8A%E7%BD%91%E7%AB%99&amp;keywords=%E4%B9%A6&amp;qid=1584165231&amp;sr=8-10"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    kv = &#123;<span class="string">'user-agent'</span>:<span class="string">'Mozilla/5.0'</span>&#125;</span><br><span class="line">    r = requests.get(url, headers = kv)</span><br><span class="line">    r.raise_for_status()</span><br><span class="line">    r.encoding = r.apparent_encoding</span><br><span class="line">    print(r.text[:<span class="number">1000</span>])</span><br><span class="line"></span><br><span class="line"><span class="keyword">except</span>:</span><br><span class="line">    print(<span class="string">"Failed"</span>)</span><br></pre></td></tr></table></figure>
+
+
       
 
       
@@ -249,7 +253,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/23/my-first-blog/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/14/%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%88%AC%E5%8F%96%E5%AE%9E%E4%BE%8B/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -263,18 +267,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/11/23/%E4%BD%A0%E5%A5%BD%E5%95%8A/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          你好啊
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/11/23/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2020/03/14/%E7%AE%80%E5%8D%95%E7%9A%84%E7%88%AC%E5%8F%96%E4%BA%AC%E4%B8%9C%E5%95%86%E5%93%81%E5%AE%9E%E4%BE%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">简单的爬取京东商品实例</div>
       <i class="icon-circle-right"></i>
     </a>
   
