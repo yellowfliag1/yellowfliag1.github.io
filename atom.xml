@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Yellowfliag1 blog</title>
+  
+  
+  <link href="https://yellowfliag1.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://yellowfliag1.github.io/"/>
+  <updated>2024-11-30T11:14:14.354Z</updated>
+  <id>https://yellowfliag1.github.io/</id>
+  
+  <author>
+    <name>yellowfliag1</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://yellowfliag1.github.io/post/0.html"/>
+    <id>https://yellowfliag1.github.io/post/0.html</id>
+    <published>2024-11-30T11:06:26.559Z</published>
+    <updated>2024-11-30T11:14:14.354Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="搭建博客遇到的坑"><a href="#搭建博客遇到的坑" class="headerlink" title="搭建博客遇到的坑"></a>搭建博客遇到的坑</h1><h3 id="1、配置使用单引号"><a href="#1、配置使用单引号" class="headerlink" title="1、配置使用单引号"></a>1、配置使用单引号</h3><p>由于配置中都是使用单引号，而我在副标题填了yellowfliag1’s blog导致无法部署</p><h3 id="2、Cannot-GET"><a href="#2、Cannot-GET" class="headerlink" title="2、Cannot GET &#x2F;"></a>2、Cannot GET &#x2F;</h3><p>这是由于post里面没有文章，必须先有一篇2文章再部署才有效，这也是这篇文章的来由。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;搭建博客遇到的坑&quot;&gt;&lt;a href=&quot;#搭建博客遇到的坑&quot; class=&quot;headerlink&quot; title=&quot;搭建博客遇到的坑&quot;&gt;&lt;/a&gt;搭建博客遇到的坑&lt;/h1&gt;&lt;h3 id=&quot;1、配置使用单引号&quot;&gt;&lt;a href=&quot;#1、配置使用单引号&quot; class=&quot;he</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
