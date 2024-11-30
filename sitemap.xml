@@ -2,33 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://yellowfliag1.github.io/post/0.html</loc>
-    
-    <lastmod>2024-11-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yellowfliag1.github.io/post/a927044d.html</loc>
-    
-    <lastmod>2024-11-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yellowfliag1.github.io/post/4a17b156.html</loc>
-    
-    <lastmod>2024-11-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://yellowfliag1.github.io/photos/video.html</loc>
     
     <lastmod>2024-11-27</lastmod>
@@ -56,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://yellowfliag1.github.io/music/index.html</loc>
+    <loc>https://yellowfliag1.github.io/categories/index.html</loc>
     
     <lastmod>2024-11-27</lastmod>
     
@@ -65,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://yellowfliag1.github.io/categories/index.html</loc>
+    <loc>https://yellowfliag1.github.io/music/index.html</loc>
     
     <lastmod>2024-11-27</lastmod>
     
@@ -91,55 +64,6 @@
   </url>
 
   
-  <url>
-    <loc>https://yellowfliag1.github.io/tags/hexo/</loc>
-    <lastmod>2024-11-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yellowfliag1.github.io/tags/new-yilia/</loc>
-    <lastmod>2024-11-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yellowfliag1.github.io/tags/math/</loc>
-    <lastmod>2024-11-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
-  
-  <url>
-    <loc>https://yellowfliag1.github.io/categories/%E5%8D%9A%E5%AE%A2Blog/</loc>
-    <lastmod>2024-11-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yellowfliag1.github.io/categories/math/</loc>
-    <lastmod>2024-11-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yellowfliag1.github.io/categories/%E5%8D%9A%E5%AE%A2Blog/hexo/</loc>
-    <lastmod>2024-11-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yellowfliag1.github.io/categories/%E5%8D%9A%E5%AE%A2Blog/new-yilia/</loc>
-    <lastmod>2024-11-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
 </urlset>
