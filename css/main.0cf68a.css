@@ -3762,3 +3762,72 @@ to {
 .icon-cursor {
   cursor: pointer;
 }
+
+/* Global UX overrides */
+.article-entry {
+  color: #2b2f33;
+  line-height: 1.85;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.article-entry p,
+.article-entry li {
+  font-size: 16px;
+}
+
+.article-entry img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.article-entry pre {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#container {
+  scroll-behavior: smooth;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #1b8ef2;
+  outline-offset: 2px;
+}
+
+.header-nav .social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  min-height: 32px;
+}
+
+@media (max-width: 768px) {
+  .article-entry p,
+  .article-entry li {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .anm-canvas,
+  .heart {
+    display: none !important;
+  }
+}

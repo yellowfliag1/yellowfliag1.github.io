@@ -3786,3 +3786,75 @@
         })
     }
 });
+
+;(function () {
+    if (window.__yf1UxPatched) return;
+    window.__yf1UxPatched = true;
+
+    function onReady(fn) {
+        if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", fn);
+        } else {
+            fn();
+        }
+    }
+
+    function patchExternalLinks() {
+        var links = document.querySelectorAll('a[target="_blank"]');
+        for (var i = 0; i < links.length; i++) {
+            var link = links[i];
+            var rel = link.getAttribute("rel") || "";
+            if (rel.indexOf("noopener") === -1) rel += (rel ? " " : "") + "noopener";
+            if (rel.indexOf("noreferrer") === -1) rel += " noreferrer";
+            link.setAttribute("rel", rel.trim());
+        }
+    }
+
+    function patchMediaLoading() {
+        var images = document.querySelectorAll("img");
+        var avatarEager = false;
+        for (var i = 0; i < images.length; i++) {
+            var img = images[i];
+            if (!img.getAttribute("decoding")) img.setAttribute("decoding", "async");
+            if (!img.getAttribute("loading")) {
+                if (!avatarEager && img.className && img.className.indexOf("js-avatar") > -1) {
+                    img.setAttribute("loading", "eager");
+                    avatarEager = true;
+                } else {
+                    img.setAttribute("loading", "lazy");
+                }
+            }
+        }
+
+        var iframes = document.querySelectorAll("iframe");
+        for (var j = 0; j < iframes.length; j++) {
+            var frame = iframes[j];
+            if (!frame.getAttribute("loading")) frame.setAttribute("loading", "lazy");
+        }
+    }
+
+    function patchKeyboardAccess() {
+        var blocks = document.querySelectorAll("pre");
+        for (var i = 0; i < blocks.length; i++) {
+            if (!blocks[i].hasAttribute("tabindex")) blocks[i].setAttribute("tabindex", "0");
+        }
+    }
+
+    function applyLowPowerMode() {
+        var prefersReduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        var isSmallScreen = window.matchMedia && window.matchMedia("(max-width: 768px)").matches;
+        var saveData = navigator.connection && navigator.connection.saveData;
+        if (prefersReduced || isSmallScreen || saveData) {
+            var canvas = document.getElementById("anm-canvas");
+            if (canvas) canvas.style.display = "none";
+            document.documentElement.className += " reduced-motion";
+        }
+    }
+
+    onReady(function () {
+        patchExternalLinks();
+        patchMediaLoading();
+        patchKeyboardAccess();
+        applyLowPowerMode();
+    });
+})();

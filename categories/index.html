@@ -45,13 +45,19 @@
   <!--谷歌分析-->
   
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  
-  gtag('config', '');
+  (function () {
+    var gaTrackingId = "";
+    if (!gaTrackingId) return;
+    var gaScript = document.createElement("script");
+    gaScript.async = true;
+    gaScript.src = "https://www.googletagmanager.com/gtag/js?id=" + gaTrackingId;
+    document.head.appendChild(gaScript);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", gaTrackingId);
+  })();
 </script>
 <!-- End Google Analytics -->
 
@@ -59,13 +65,16 @@
   <!--百度统计-->
   
 <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
+  (function () {
+    var baiduHmId = "";
+    if (!baiduHmId) return;
+    var _hmt = window._hmt || [];
+    window._hmt = _hmt;
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?" + baiduHmId;
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
 </script>
 
 
